@@ -1,0 +1,179 @@
+/* ---------------------------------------------------
+------------------------------------------------------
+PAGE LAYOUT - CONSISTENT THROUGH ALL PAGES 
+------------------------------------------------------
+----------------------------------------------------*/
+html {
+    margin:0; 
+    padding:0;
+}
+
+@media (min-width: 800px) {
+    .content-wrapper {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr; 
+        grid-template-areas: "banner banner" "aside main" "footer footer";
+    }
+
+    .banner {
+        grid-area: banner;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+/* End of page layout */ 
+
+.banner {
+    background-color: rgb(204, 185, 255);
+    padding: 3em;
+    line-height: 2.2em;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body {
+    line-height: 1.6em;
+    font-family: sans-serif;
+}
+
+aside {
+    background-color:rgb(158, 159, 248);
+    padding-right:20px;
+    padding-left:20px;
+    padding-bottom:30px;
+    padding-top: 20px;
+}
+
+main {
+    background-color: rgb(184, 201, 255);
+    padding-right:20px;
+    padding-left:20px;
+    padding-bottom:30px;
+    padding-top:20px;
+}
+
+/* ---- NAV BAR ---- */ 
+
+nav {
+    background-image:url(images/gradient.png);
+    max-width:100%;
+    height:auto;
+    padding:0%;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    font-family: sans-serif;
+    padding: 10px;
+    overflow: hidden;
+    justify-content:center;
+  }
+  
+nav li {
+    float: left;
+    font-family: sans-serif;
+    margin-left:3%;
+    margin-right:3%;
+  }
+  
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+  }
+
+strong {
+    align-self: center;
+}
+
+footer {
+    background-color: rgb(204, 185, 255);
+    padding: 10px;
+    text-align: center;
+}
+
+/* ---------------------------------------------------
+------------------------------------------------------
+PAGE 2 - WRITING BOOKS 
+------------------------------------------------------
+----------------------------------------------------*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+    grid-column: 1/11;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 2/11;
+    grid-row: 1;
+}
+
+.three {
+    grid-column: 3/11;
+    grid-row: 1;
+}
+
+.four {
+    grid-column: 4/11;
+    grid-row: 1;
+}
+
+.five {
+    grid-column: 5/11;
+    grid-row: 1;
+}
+
+.six {
+    grid-column: 6/11;
+    grid-row: 1;
+}
+
+.seven {
+    grid-column: 7/11;
+    grid-row: 1;
+}
+
+.eight {
+    grid-column: 8/11;
+    grid-row: 1;
+}
+
+.nine {
+    grid-column: 9/11;
+    grid-row: 1;
+}
+
+.ten {
+    grid-column: 10/11;
+    grid-row: 1;
+}
+
+.eleven {
+    grid-column: 11/11;
+    grid-row: 1;
+}
+
+/* ---------------------------------------------------
+END OF PAGE 2 - WRITING BOOKS 
+----------------------------------------------------*/
